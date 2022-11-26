@@ -45,7 +45,6 @@ public class JWTauthorizationFilter extends OncePerRequestFilter {
         }
         else
         {
-            System.out.println(request.getRequestURI());
             if(request.getRequestURI().startsWith("/auth") || request.getRequestURI().startsWith("/swagger-ui")
                 || request.getRequestURI().startsWith("/docs")  || request.getRequestURI().startsWith("/public"))
             {
